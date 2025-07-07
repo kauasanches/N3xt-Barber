@@ -3,39 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/55f13e025f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
     <title>Home Page - NB</title>
 </head>
 <body>
     <header class="cabecalho">
-        <h1><span class="">N3xt</span> Barber</h1>
+        <h1><span>N3xt</span> Barber</h1>
 
         <nav>
             <ul>
-                <li><a href="#">Sobre<span class="li2"> nós</span></a></li>
-                <li><a href="#">Produtos</a></li>
+                <li>
+                    <a href="#about">
+                        Sobre<span class="li2"> nós</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#products">
+                        Produtos
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <section class="about">
+        <section class="about" id="about">
             <h2 class="titulo">Sobre<span class="li2"> nós</span></h2>
-            <p>Olá, bem-vindo ao site da barbearia <b><span class="li2">N3xt</span> Barber</b>, aqui você irá encontrar os melhores barbeiros da região.</p>
+            <p><b>Olá</b>, bem-vindo ao site da barbearia <b class="name-workshop"><span class="li2 name-workshop">N3xt</span> Barber</b>, aqui você irá encontrar os melhores barbeiros da região.</p>
+            <p>Na <b class="name-workshop"><span class="li2 name-workshop">N3xt</span> Barber</b>, a gente acredita que cortar o cabelo vai muito além de estética — <i>é um ritual</i>. Somos uma barbearia contemporânea que une <span class="li2">tradição, estilo e atitude</span> para oferecer mais do que um corte: <b><i>uma experiência</i></b>. Aqui, cada detalhe importa. Do <span class="li2"><i>atendimento</i></span> ao <span class="li2"><i>acabamento</i></span>, do <span class="li2"><i>ambiente</i></span> à <span class="li2"><i>conversa</i></span>, tudo foi pensado para que você se sinta em casa e saia <b><i>renovado</i></b>. Trabalhamos com <b>técnicas modernas</b>, <b>profissionais qualificados</b> e os melhores produtos do mercado para entregar um serviço à altura do que você merece. Seja para manter o visual afiado ou transformar o estilo, a <b class="name-workshop"><span class="li2 name-workshop">N3xt</span> Barber</b>  é o seu próximo destino.</p>
+
+            <button class="agendar" onclick="agendar()">
+                <p><i class="fa-solid fa-clock"></i> Agendar Horário</p>
+            </button>
         </section>
 
-        <section class="products">
-            <h2 class="titulo">Produtos</h2>
+        <section class="info">
+            <div class="info-detail">
+                <h3><i class="fa-solid fa-user"></i> +10Mil</h3>
+                <h4>Clientes atendidos e satisfeitos</h4>
+            </div>
+            <div class="info-detail">
+                <h3><i class="fa-solid fa-scissors"></i> +10</h3>
+                <h4>Profissionais capacitados</h4>
+            </div>
+            <div class="info-detail">
+                <h3><i class="fa-solid fa-award"></i> +30</h3>
+                <h4>Diplomas e prêmios conquistados</h4>
+            </div>
+            <div class="info-detail">
+                <h3><i class="fa-solid fa-calendar-days"></i> +5</h3>
+                <h4>Anos de trabalho e sucesso</h4>
+            </div>
+        </section>
 
-            <div class="procuts-catalog">
-                <div class="item-catalog">
-                    <img src="https://img.freepik.com/vetores-premium/icone-de-corte-de-barba_933463-138415.jpg" alt=".">
-                    <p>Barba</p>
-                    <p><span class="li2">R$</span> 15,00</p>
+        <section class="products" id="products">
+            <h2 class="titulo">Nossos <span class="li2">produtos</span></h2>
+
+            <div class="itens">
+                <div class="procuts-catalog">
+                    <div class="item-catalog">
+                        <img src="./img/cabelo.jpg" alt=".">
+                        <b>
+                            <p class="item-title">Cabelo</p>
+                            <p class="valor"><span class="li2">R$</span> 35,00</p>
+                        </b>
+                    </div>
+                    <div class="item-catalog">
+                        <img src="./img/barba.jpg" alt=".">
+                        <b>
+                            <p class="item-title">Barba</p>
+                            <p class="valor"><span class="li2">R$</span> 15,00</p>
+                        </b>
+                    </div>
+                    <div class="item-catalog">
+                        <img src="./img/sobrancelha.jpg" alt=".">
+                        <b>
+                            <p class="item-title">Designer de sobrancelha</p>
+                            <p class="valor"><span class="li2">R$</span> 15,00</p>
+                        </b>
+                    </div>
                 </div>
             </div>
         </section>
 
     </div>
+
+    <footer>
+            <div class="footer-page">
+                <p>Desenvolvido por Kauã - Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+    <script>
+        function agendar() {
+            window.location.href = "agendar.html";
+        }
+    </script>
 </body>
 </html>

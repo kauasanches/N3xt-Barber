@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
 
 * {
     margin: 0;
@@ -20,18 +20,25 @@ body {
 }
 
 .cabecalho h1 {
-    font-family: 'Bitcount Grid Double', sans-serif;
+    font-family: "Manufacturing Consent", system-ui;
     color: white;
+    font-size: 35px;
 
     & span {
-        font-family: 'Bitcount Grid Double', sans-serif;
+        font-family: "Manufacturing Consent", system-ui;
         color: red;
     }
+}
+
+.cabecalho ul {
+    list-style-type: none;
+    display: flex;
 }
 
 .cabecalho ul li a {
     color: white;
     text-decoration: none;
+    margin: 15px;
 }
 
 .cabecalho ul li a:hover {
@@ -40,4 +47,160 @@ body {
 
 .li2 {
     color: red;
+}
+
+.container {
+    margin: 15px;
+    text-align: center;
+}
+
+.name-workshop {
+    font-size: 18px;
+}
+
+.about {
+    background: url(./img/background.png) center center;
+}
+
+.agendar {
+    margin: 20px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    font-size: 18px;
+    color: white;
+}
+
+.agendar:hover {
+    color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+
+    & .info-detail {
+        margin: 15px;
+        width: 250px;
+        height: 110px;
+        background-color: rgb(36, 36, 36);
+        padding: 15px;
+        border-radius: 5px;
+
+        & h3 {
+            color: rgb(165, 165, 165);
+            font-size: 35px;
+        }
+    }
+}
+
+.titulo {
+    font-size: 35px;
+    margin: 35px;
+}
+
+.procuts-catalog {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-catalog {
+    background-color: rgb(36, 36, 36);
+    flex-direction: column;
+    margin: 15px;
+    border-radius: 5px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-catalog:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.item-catalog img {
+    width: 280px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.item-catalog b {
+    margin-bottom: 5px;
+}
+
+.item-catalog .valor {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.item-catalog .item-title {
+    font-size: 18px;
+    color: rgb(165, 165, 165);
+}
+
+footer {
+    margin-top: 35px;
+}
+
+.footer-page {
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.form-agenda {
+    display: flex;
+    justify-content: center;
+}
+
+.form-body {
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    padding: 15px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+
+    & input {
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    & .enviar-horario {
+        margin: 15px 0;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: red;
+        font-size: 18px;
+        color: white;
+    }
+
+    & .enviar-horario:hover {
+        color: black;
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: .2s;
+    }
 }
