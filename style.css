@@ -43,6 +43,7 @@ body {
 
 .cabecalho ul li a:hover {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .li2 {
@@ -60,6 +61,19 @@ body {
 
 .about {
     background: url(./img/background.png) center center;
+    display: flex;
+}
+
+.info-imagem {
+    margin-left: 15px;
+    width: 40%;
+    display: flex;
+
+    & img {
+        border-radius: 15px;
+        width: 450px;
+
+    }
 }
 
 .agendar {
@@ -77,6 +91,12 @@ body {
     cursor: pointer;
     transform: scale(1.05);
     transition: .2s;
+}
+
+.bar {
+    background-color: red;
+    height: 2px;
+    margin: 15px 0;
 }
 
 .info {
